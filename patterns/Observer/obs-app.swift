@@ -9,6 +9,6 @@
 import Foundation
 
 func obs_main() {
-    let some_user = InstaUser(username: "MaggiMan")
+    let some_user = InstaUser(id: 1, username: "MaggiMan")
     print(some_user.name)
 }

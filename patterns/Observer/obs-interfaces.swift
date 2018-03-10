@@ -15,5 +15,6 @@ protocol Observable {
 }
 
 protocol Subscriber {
+    var id: Int {get};
     func getImages(pictures: [String])
 }

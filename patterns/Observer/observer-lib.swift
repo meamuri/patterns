@@ -9,8 +9,10 @@
 import Foundation
 
 class InstaUser: Subscriber {
+    let id: Int
     let name: String
-    init (username: String) {
+    init (id: Int, username: String) {
+        self.id = id
         self.name = username
     }
     
@@ -34,12 +36,10 @@ class SocialNetwork : Observable {
     
     func addSubscriber(s: Subscriber) {
         subscribers.append(s)
-//        subscribers.append(newElement: s)
     }
     
     func removeSubscriber(s: Subscriber) {
-//        if let index = subscribers.index
-        // subscribers = subscribers.filter {$0 !== s }
+        subscribers = subscribers.filter { $0.id != s.id }
     }
     
     func notifySubscriber() {
