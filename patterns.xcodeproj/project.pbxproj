@@ -12,10 +12,22 @@
 		EB87AF2A20541C28001CC60D /* NetworkSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB87AF2920541C28001CC60D /* NetworkSettings.swift */; };
 		EB87AF2E20541DB3001CC60D /* NetworkSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB87AF2920541C28001CC60D /* NetworkSettings.swift */; };
 		EB87AF302054207A001CC60D /* SingletonDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB87AF2F2054207A001CC60D /* SingletonDemo.swift */; };
+		EB87AF4020542392001CC60D /* ProxyLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB87AF3F20542392001CC60D /* ProxyLib.swift */; };
+		EB87AF4320542837001CC60D /* ProxyAp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB87AF4220542837001CC60D /* ProxyAp.swift */; };
+		EB87AF442054283F001CC60D /* ProxyAp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB87AF4220542837001CC60D /* ProxyAp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		EB87AF1020541BE2001CC60D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		EB87AF3620542338001CC60D /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -34,6 +46,9 @@
 		EB87AF2420541BF7001CC60D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB87AF2920541C28001CC60D /* NetworkSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSettings.swift; sourceTree = "<group>"; };
 		EB87AF2F2054207A001CC60D /* SingletonDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonDemo.swift; sourceTree = "<group>"; };
+		EB87AF3820542338001CC60D /* proxy-pattern */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "proxy-pattern"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB87AF3F20542392001CC60D /* ProxyLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyLib.swift; sourceTree = "<group>"; };
+		EB87AF4220542837001CC60D /* ProxyAp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyAp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +66,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EB87AF3520542338001CC60D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -59,6 +81,7 @@
 			children = (
 				EB87AF1420541BE2001CC60D /* patterns */,
 				EB87AF2120541BF7001CC60D /* patterns-test */,
+				EB87AF3920542338001CC60D /* proxy-pattern */,
 				EB87AF1320541BE2001CC60D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,6 +91,7 @@
 			children = (
 				EB87AF1220541BE2001CC60D /* patterns */,
 				EB87AF2020541BF7001CC60D /* patterns-test.xctest */,
+				EB87AF3820542338001CC60D /* proxy-pattern */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,6 +121,15 @@
 				EB87AF2F2054207A001CC60D /* SingletonDemo.swift */,
 			);
 			path = Singleton;
+			sourceTree = "<group>";
+		};
+		EB87AF3920542338001CC60D /* proxy-pattern */ = {
+			isa = PBXGroup;
+			children = (
+				EB87AF3F20542392001CC60D /* ProxyLib.swift */,
+				EB87AF4220542837001CC60D /* ProxyAp.swift */,
+			);
+			path = "proxy-pattern";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +169,23 @@
 			productReference = EB87AF2020541BF7001CC60D /* patterns-test.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		EB87AF3720542338001CC60D /* proxy-pattern */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB87AF3C20542338001CC60D /* Build configuration list for PBXNativeTarget "proxy-pattern" */;
+			buildPhases = (
+				EB87AF3420542338001CC60D /* Sources */,
+				EB87AF3520542338001CC60D /* Frameworks */,
+				EB87AF3620542338001CC60D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "proxy-pattern";
+			productName = "proxy-pattern";
+			productReference = EB87AF3820542338001CC60D /* proxy-pattern */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -151,6 +201,10 @@
 						ProvisioningStyle = Automatic;
 					};
 					EB87AF1F20541BF7001CC60D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					EB87AF3720542338001CC60D = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -170,6 +224,7 @@
 			targets = (
 				EB87AF1120541BE2001CC60D /* patterns */,
 				EB87AF1F20541BF7001CC60D /* patterns-test */,
+				EB87AF3720542338001CC60D /* proxy-pattern */,
 			);
 		};
 /* End PBXProject section */
@@ -192,6 +247,7 @@
 				EB87AF1620541BE2001CC60D /* main.swift in Sources */,
 				EB87AF302054207A001CC60D /* SingletonDemo.swift in Sources */,
 				EB87AF2A20541C28001CC60D /* NetworkSettings.swift in Sources */,
+				EB87AF442054283F001CC60D /* ProxyAp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +257,15 @@
 			files = (
 				EB87AF2320541BF7001CC60D /* patterns_test.swift in Sources */,
 				EB87AF2E20541DB3001CC60D /* NetworkSettings.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB87AF3420542338001CC60D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB87AF4020542392001CC60D /* ProxyLib.swift in Sources */,
+				EB87AF4320542837001CC60D /* ProxyAp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +422,24 @@
 			};
 			name = Release;
 		};
+		EB87AF3D20542338001CC60D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		EB87AF3E20542338001CC60D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -383,6 +466,15 @@
 			buildConfigurations = (
 				EB87AF2620541BF7001CC60D /* Debug */,
 				EB87AF2720541BF7001CC60D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB87AF3C20542338001CC60D /* Build configuration list for PBXNativeTarget "proxy-pattern" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB87AF3D20542338001CC60D /* Debug */,
+				EB87AF3E20542338001CC60D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
