@@ -11,6 +11,7 @@
 		EB87AF2320541BF7001CC60D /* patterns_test.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB87AF2220541BF7001CC60D /* patterns_test.swift */; };
 		EB87AF2A20541C28001CC60D /* NetworkSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB87AF2920541C28001CC60D /* NetworkSettings.swift */; };
 		EB87AF2E20541DB3001CC60D /* NetworkSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB87AF2920541C28001CC60D /* NetworkSettings.swift */; };
+		EB87AF302054207A001CC60D /* SingletonDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB87AF2F2054207A001CC60D /* SingletonDemo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +33,7 @@
 		EB87AF2220541BF7001CC60D /* patterns_test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = patterns_test.swift; sourceTree = "<group>"; };
 		EB87AF2420541BF7001CC60D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB87AF2920541C28001CC60D /* NetworkSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSettings.swift; sourceTree = "<group>"; };
+		EB87AF2F2054207A001CC60D /* SingletonDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				EB87AF2920541C28001CC60D /* NetworkSettings.swift */,
+				EB87AF2F2054207A001CC60D /* SingletonDemo.swift */,
 			);
 			path = Singleton;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB87AF1620541BE2001CC60D /* main.swift in Sources */,
+				EB87AF302054207A001CC60D /* SingletonDemo.swift in Sources */,
 				EB87AF2A20541C28001CC60D /* NetworkSettings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
