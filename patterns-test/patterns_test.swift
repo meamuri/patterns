@@ -24,12 +24,19 @@ class patterns_test: XCTestCase {
         super.tearDown()
     }
     
-    func testSingleton() {
+    func testSingletonInstence() {
         let otherInstance = NetworkManager.shared()
         let isSimilarInstances = manager === otherInstance
         XCTAssertTrue(isSimilarInstances)
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+    }
+    
+    func testSignletonCountInvocation() {
+        XCTAssertEqual(1, manager.instanceCount)
+        let other = NetworkManager.shared()
+        XCTAssertEqual(1, other.instanceCount)
+        XCTAssertEqual(manager.instanceCount, other.instanceCount)
     }
     
 }
