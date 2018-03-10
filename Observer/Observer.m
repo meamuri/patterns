@@ -1,13 +1,13 @@
 //
-//  main.swift
-//  patterns
+//  Observer.m
+//  Observer
 //
 //  Created by Rom Dr on 10.03.2018.
 //  Copyright © 2018 Rom Dr. All rights reserved.
 //
 
-import Foundation
+#import "Observer.h"
 
-singleton_main()
-proxy_main()
-obs_main()
+@implementation Observer
+
+@end
