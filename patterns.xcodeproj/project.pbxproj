@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		EB87AF1620541BE2001CC60D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB87AF1520541BE2001CC60D /* main.swift */; };
+		EB87AF2320541BF7001CC60D /* patterns_test.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB87AF2220541BF7001CC60D /* patterns_test.swift */; };
+		EB87AF2A20541C28001CC60D /* NetworkSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB87AF2920541C28001CC60D /* NetworkSettings.swift */; };
+		EB87AF2E20541DB3001CC60D /* NetworkSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB87AF2920541C28001CC60D /* NetworkSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +28,21 @@
 /* Begin PBXFileReference section */
 		EB87AF1220541BE2001CC60D /* patterns */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = patterns; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB87AF1520541BE2001CC60D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		EB87AF2020541BF7001CC60D /* patterns-test.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "patterns-test.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB87AF2220541BF7001CC60D /* patterns_test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = patterns_test.swift; sourceTree = "<group>"; };
+		EB87AF2420541BF7001CC60D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB87AF2920541C28001CC60D /* NetworkSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		EB87AF0F20541BE2001CC60D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB87AF1D20541BF7001CC60D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				EB87AF1420541BE2001CC60D /* patterns */,
+				EB87AF2120541BF7001CC60D /* patterns-test */,
 				EB87AF1320541BE2001CC60D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				EB87AF1220541BE2001CC60D /* patterns */,
+				EB87AF2020541BF7001CC60D /* patterns-test.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,9 +73,27 @@
 		EB87AF1420541BE2001CC60D /* patterns */ = {
 			isa = PBXGroup;
 			children = (
+				EB87AF2820541C09001CC60D /* Singleton */,
 				EB87AF1520541BE2001CC60D /* main.swift */,
 			);
 			path = patterns;
+			sourceTree = "<group>";
+		};
+		EB87AF2120541BF7001CC60D /* patterns-test */ = {
+			isa = PBXGroup;
+			children = (
+				EB87AF2220541BF7001CC60D /* patterns_test.swift */,
+				EB87AF2420541BF7001CC60D /* Info.plist */,
+			);
+			path = "patterns-test";
+			sourceTree = "<group>";
+		};
+		EB87AF2820541C09001CC60D /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				EB87AF2920541C28001CC60D /* NetworkSettings.swift */,
+			);
+			path = Singleton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +116,23 @@
 			productReference = EB87AF1220541BE2001CC60D /* patterns */;
 			productType = "com.apple.product-type.tool";
 		};
+		EB87AF1F20541BF7001CC60D /* patterns-test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB87AF2520541BF7001CC60D /* Build configuration list for PBXNativeTarget "patterns-test" */;
+			buildPhases = (
+				EB87AF1C20541BF7001CC60D /* Sources */,
+				EB87AF1D20541BF7001CC60D /* Frameworks */,
+				EB87AF1E20541BF7001CC60D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "patterns-test";
+			productName = "patterns-test";
+			productReference = EB87AF2020541BF7001CC60D /* patterns-test.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +144,10 @@
 				ORGANIZATIONNAME = "Rom Dr";
 				TargetAttributes = {
 					EB87AF1120541BE2001CC60D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					EB87AF1F20541BF7001CC60D = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -111,9 +166,20 @@
 			projectRoot = "";
 			targets = (
 				EB87AF1120541BE2001CC60D /* patterns */,
+				EB87AF1F20541BF7001CC60D /* patterns-test */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB87AF1E20541BF7001CC60D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EB87AF0E20541BE2001CC60D /* Sources */ = {
@@ -121,6 +187,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB87AF1620541BE2001CC60D /* main.swift in Sources */,
+				EB87AF2A20541C28001CC60D /* NetworkSettings.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB87AF1C20541BF7001CC60D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB87AF2320541BF7001CC60D /* patterns_test.swift in Sources */,
+				EB87AF2E20541DB3001CC60D /* NetworkSettings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +327,32 @@
 			};
 			name = Release;
 		};
+		EB87AF2620541BF7001CC60D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "patterns-test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.vsu.patterns-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		EB87AF2720541BF7001CC60D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "patterns-test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.vsu.patterns-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -268,6 +370,15 @@
 			buildConfigurations = (
 				EB87AF1A20541BE2001CC60D /* Debug */,
 				EB87AF1B20541BE2001CC60D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB87AF2520541BF7001CC60D /* Build configuration list for PBXNativeTarget "patterns-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB87AF2620541BF7001CC60D /* Debug */,
+				EB87AF2720541BF7001CC60D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
