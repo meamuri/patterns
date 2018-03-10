@@ -9,5 +9,5 @@
 import Foundation
 
 func obs_main() {
-    
+    let some_user = InstaUser(username: "MaggiMan")
 }

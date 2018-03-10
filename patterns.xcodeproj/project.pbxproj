@@ -16,8 +16,9 @@
 		EB87AF302054207A001CC60D /* SingletonDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB87AF2F2054207A001CC60D /* SingletonDemo.swift */; };
 		EB87AF4020542392001CC60D /* ProxyLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB87AF3F20542392001CC60D /* ProxyLib.swift */; };
 		EB87AF4320542837001CC60D /* ProxyAp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB87AF4220542837001CC60D /* ProxyAp.swift */; };
-		EB87AF5920542900001CC60D /* main-obs.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB87AF5820542900001CC60D /* main-obs.swift */; };
-		EB87AF5D2054295B001CC60D /* main-obs.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB87AF5820542900001CC60D /* main-obs.swift */; };
+		EB9AF85A2054498A006936D7 /* observer-lib.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9AF8592054498A006936D7 /* observer-lib.swift */; };
+		EB9AF85C205449AC006936D7 /* obs-interfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9AF85B205449AC006936D7 /* obs-interfaces.swift */; };
+		EB9AF85E205449C8006936D7 /* obs-app.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9AF85D205449C8006936D7 /* obs-app.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -63,7 +64,9 @@
 		EB87AF4220542837001CC60D /* ProxyAp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyAp.swift; sourceTree = "<group>"; };
 		EB87AF49205428B2001CC60D /* libObserver.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libObserver.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB87AF5620542900001CC60D /* observer-pattern */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "observer-pattern"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB87AF5820542900001CC60D /* main-obs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "main-obs.swift"; sourceTree = "<group>"; };
+		EB9AF8592054498A006936D7 /* observer-lib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "observer-lib.swift"; sourceTree = "<group>"; };
+		EB9AF85B205449AC006936D7 /* obs-interfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "obs-interfaces.swift"; sourceTree = "<group>"; };
+		EB9AF85D205449C8006936D7 /* obs-app.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "obs-app.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +114,6 @@
 				EB87AF1420541BE2001CC60D /* patterns */,
 				EB87AF2120541BF7001CC60D /* patterns-test */,
 				EB87AF3920542338001CC60D /* proxy-pattern */,
-				EB87AF5720542900001CC60D /* observer-pattern */,
 				EB87AF1320541BE2001CC60D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -131,6 +133,7 @@
 		EB87AF1420541BE2001CC60D /* patterns */ = {
 			isa = PBXGroup;
 			children = (
+				EB9AF85820544968006936D7 /* Observer */,
 				EB87AF2820541C09001CC60D /* Singleton */,
 				EB87AF1520541BE2001CC60D /* main.swift */,
 			);
@@ -164,12 +167,14 @@
 			path = "proxy-pattern";
 			sourceTree = "<group>";
 		};
-		EB87AF5720542900001CC60D /* observer-pattern */ = {
+		EB9AF85820544968006936D7 /* Observer */ = {
 			isa = PBXGroup;
 			children = (
-				EB87AF5820542900001CC60D /* main-obs.swift */,
+				EB9AF8592054498A006936D7 /* observer-lib.swift */,
+				EB9AF85B205449AC006936D7 /* obs-interfaces.swift */,
+				EB9AF85D205449C8006936D7 /* obs-app.swift */,
 			);
-			path = "observer-pattern";
+			path = Observer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,11 +344,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB87AF1620541BE2001CC60D /* main.swift in Sources */,
+				EB9AF85C205449AC006936D7 /* obs-interfaces.swift in Sources */,
+				EB9AF85E205449C8006936D7 /* obs-app.swift in Sources */,
+				EB9AF85A2054498A006936D7 /* observer-lib.swift in Sources */,
 				EB87AF302054207A001CC60D /* SingletonDemo.swift in Sources */,
 				EB87AF2A20541C28001CC60D /* NetworkSettings.swift in Sources */,
 				EB41F61920543D66007FD855 /* ProxyAp.swift in Sources */,
 				EB41F61A20543E84007FD855 /* ProxyLib.swift in Sources */,
-				EB87AF5D2054295B001CC60D /* main-obs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,7 +383,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB87AF5920542900001CC60D /* main-obs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
