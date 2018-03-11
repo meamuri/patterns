@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		EB41F61920543D66007FD855 /* ProxyAp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB87AF4220542837001CC60D /* ProxyAp.swift */; };
 		EB41F61A20543E84007FD855 /* ProxyLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB87AF3F20542392001CC60D /* ProxyLib.swift */; };
+		EB7AC7652055582F00F9A02D /* it-lib.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7AC7642055582F00F9A02D /* it-lib.swift */; };
+		EB7AC76720555C6A00F9A02D /* it-demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7AC76620555C6A00F9A02D /* it-demo.swift */; };
 		EB87AF1620541BE2001CC60D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB87AF1520541BE2001CC60D /* main.swift */; };
 		EB87AF2320541BF7001CC60D /* singleton_test.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB87AF2220541BF7001CC60D /* singleton_test.swift */; };
 		EB87AF2A20541C28001CC60D /* NetworkSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB87AF2920541C28001CC60D /* NetworkSettings.swift */; };
@@ -52,6 +54,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EB7AC7642055582F00F9A02D /* it-lib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "it-lib.swift"; sourceTree = "<group>"; };
+		EB7AC76620555C6A00F9A02D /* it-demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "it-demo.swift"; sourceTree = "<group>"; };
 		EB87AF1220541BE2001CC60D /* patterns */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = patterns; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB87AF1520541BE2001CC60D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		EB87AF2020541BF7001CC60D /* patterns-test.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "patterns-test.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +112,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB7AC7632055580D00F9A02D /* Iterator */ = {
+			isa = PBXGroup;
+			children = (
+				EB7AC7642055582F00F9A02D /* it-lib.swift */,
+				EB7AC76620555C6A00F9A02D /* it-demo.swift */,
+			);
+			path = Iterator;
+			sourceTree = "<group>";
+		};
 		EB87AF0920541BE2001CC60D = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +146,7 @@
 		EB87AF1420541BE2001CC60D /* patterns */ = {
 			isa = PBXGroup;
 			children = (
+				EB7AC7632055580D00F9A02D /* Iterator */,
 				EB9AF85820544968006936D7 /* Observer */,
 				EB87AF2820541C09001CC60D /* Singleton */,
 				EB87AF1520541BE2001CC60D /* main.swift */,
@@ -350,6 +364,8 @@
 				EB87AF302054207A001CC60D /* SingletonDemo.swift in Sources */,
 				EB87AF2A20541C28001CC60D /* NetworkSettings.swift in Sources */,
 				EB41F61920543D66007FD855 /* ProxyAp.swift in Sources */,
+				EB7AC76720555C6A00F9A02D /* it-demo.swift in Sources */,
+				EB7AC7652055582F00F9A02D /* it-lib.swift in Sources */,
 				EB41F61A20543E84007FD855 /* ProxyLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
