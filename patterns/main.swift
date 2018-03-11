@@ -8,7 +8,8 @@
 
 import Foundation
 
-singleton_main()
-proxy_main()
-obs_main()
-it_main()
+//singleton_main()
+//proxy_main()
+//obs_main()
+//it_main()
+f_main()
