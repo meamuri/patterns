@@ -8,11 +8,12 @@
 
 import Foundation
 
-//singleton_main()      // singleton
-//proxy_main()          // proxy
-//obs_main()            // observer
-//it_main()             // iterator
-//f_main()              // factory
-//facade_main()         // facade
-//adapterMain()         // adapter
-decoratorMain()
+singleton_main()        // singleton
+proxy_main()            // proxy
+obs_main()              // observer
+it_main()               // iterator
+f_main()                // factory
+facade_main()           // facade
+adapterMain()           // adapter
+decoratorMain()         // decorator
+abstractFactoryMain()   // abstractFactory

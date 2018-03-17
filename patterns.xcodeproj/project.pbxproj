@@ -31,6 +31,9 @@
 		EBECDDE7205D1ED6006898EA /* adapter-demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBECDDE6205D1ED6006898EA /* adapter-demo.swift */; };
 		EBECDDE9205D1FF1006898EA /* decorator-lib.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBECDDE8205D1FF1006898EA /* decorator-lib.swift */; };
 		EBECDDEB205D2227006898EA /* decorator-demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBECDDEA205D2227006898EA /* decorator-demo.swift */; };
+		EBECDDEE205D252B006898EA /* af-lib.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBECDDED205D252B006898EA /* af-lib.swift */; };
+		EBECDDF0205D254B006898EA /* af-factories.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBECDDEF205D254B006898EA /* af-factories.swift */; };
+		EBECDDF2205D2568006898EA /* af-demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBECDDF1205D2568006898EA /* af-demo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -91,6 +94,9 @@
 		EBECDDE6205D1ED6006898EA /* adapter-demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "adapter-demo.swift"; sourceTree = "<group>"; };
 		EBECDDE8205D1FF1006898EA /* decorator-lib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "decorator-lib.swift"; sourceTree = "<group>"; };
 		EBECDDEA205D2227006898EA /* decorator-demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "decorator-demo.swift"; sourceTree = "<group>"; };
+		EBECDDED205D252B006898EA /* af-lib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "af-lib.swift"; sourceTree = "<group>"; };
+		EBECDDEF205D254B006898EA /* af-factories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "af-factories.swift"; sourceTree = "<group>"; };
+		EBECDDF1205D2568006898EA /* af-demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "af-demo.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,14 +147,14 @@
 			path = Iterator;
 			sourceTree = "<group>";
 		};
-		EB7AC76820555F8300F9A02D /* Factory */ = {
+		EB7AC76820555F8300F9A02D /* FactoryMethod */ = {
 			isa = PBXGroup;
 			children = (
 				EB7AC7692055606900F9A02D /* manufacture.swift */,
 				EB7AC76B2055609300F9A02D /* Car.swift */,
 				EB7AC76D2055613300F9A02D /* f-demo.swift */,
 			);
-			path = Factory;
+			path = FactoryMethod;
 			sourceTree = "<group>";
 		};
 		EB87AF0920541BE2001CC60D = {
@@ -176,10 +182,11 @@
 		EB87AF1420541BE2001CC60D /* patterns */ = {
 			isa = PBXGroup;
 			children = (
+				EBECDDEC205D24F3006898EA /* AbstractFactory */,
 				EBECDDE3205D1B88006898EA /* Decorator */,
 				EBECDDE2205D1B73006898EA /* Adapter */,
 				EBD1BA3C2055764E0066F0C4 /* Facade */,
-				EB7AC76820555F8300F9A02D /* Factory */,
+				EB7AC76820555F8300F9A02D /* FactoryMethod */,
 				EB7AC7632055580D00F9A02D /* Iterator */,
 				EB9AF85820544968006936D7 /* Observer */,
 				EB87AF2820541C09001CC60D /* Singleton */,
@@ -251,6 +258,16 @@
 				EBECDDEA205D2227006898EA /* decorator-demo.swift */,
 			);
 			path = Decorator;
+			sourceTree = "<group>";
+		};
+		EBECDDEC205D24F3006898EA /* AbstractFactory */ = {
+			isa = PBXGroup;
+			children = (
+				EBECDDED205D252B006898EA /* af-lib.swift */,
+				EBECDDEF205D254B006898EA /* af-factories.swift */,
+				EBECDDF1205D2568006898EA /* af-demo.swift */,
+			);
+			path = AbstractFactory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,17 +439,20 @@
 				EB87AF1620541BE2001CC60D /* main.swift in Sources */,
 				EB9AF85C205449AC006936D7 /* obs-interfaces.swift in Sources */,
 				EB7AC76C2055609300F9A02D /* Car.swift in Sources */,
+				EBECDDF2205D2568006898EA /* af-demo.swift in Sources */,
 				EBECDDE5205D1B9A006898EA /* adapter-lib.swift in Sources */,
 				EBECDDE1205D1A03006898EA /* facade-interface.swift in Sources */,
 				EB9AF85E205449C8006936D7 /* obs-app.swift in Sources */,
 				EB7AC76A2055606900F9A02D /* manufacture.swift in Sources */,
 				EB9AF85A2054498A006936D7 /* observer-lib.swift in Sources */,
 				EBD1BA40205576F80066F0C4 /* facade-lib.swift in Sources */,
+				EBECDDEE205D252B006898EA /* af-lib.swift in Sources */,
 				EB87AF302054207A001CC60D /* SingletonDemo.swift in Sources */,
 				EB87AF2A20541C28001CC60D /* NetworkSettings.swift in Sources */,
 				EB7AC76E2055613300F9A02D /* f-demo.swift in Sources */,
 				EBECDDE7205D1ED6006898EA /* adapter-demo.swift in Sources */,
 				EB41F61920543D66007FD855 /* ProxyAp.swift in Sources */,
+				EBECDDF0205D254B006898EA /* af-factories.swift in Sources */,
 				EB7AC76720555C6A00F9A02D /* it-demo.swift in Sources */,
 				EBD1BA3E205576640066F0C4 /* facade-demo.swift in Sources */,
 				EBECDDEB205D2227006898EA /* decorator-demo.swift in Sources */,
