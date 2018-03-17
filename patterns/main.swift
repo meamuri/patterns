@@ -13,4 +13,5 @@ import Foundation
 //obs_main()            // observer
 //it_main()             // iterator
 //f_main()              // factory
-facade_main()
+//facade_main()         // facade
+adapterMain()           // adapter
