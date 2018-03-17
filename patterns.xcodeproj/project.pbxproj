@@ -24,6 +24,9 @@
 		EB9AF85A2054498A006936D7 /* observer-lib.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9AF8592054498A006936D7 /* observer-lib.swift */; };
 		EB9AF85C205449AC006936D7 /* obs-interfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9AF85B205449AC006936D7 /* obs-interfaces.swift */; };
 		EB9AF85E205449C8006936D7 /* obs-app.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9AF85D205449C8006936D7 /* obs-app.swift */; };
+		EBD1BA3E205576640066F0C4 /* facade-demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD1BA3D205576640066F0C4 /* facade-demo.swift */; };
+		EBD1BA40205576F80066F0C4 /* facade-lib.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD1BA3F205576F80066F0C4 /* facade-lib.swift */; };
+		EBECDDE1205D1A03006898EA /* facade-interface.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBECDDE0205D1A03006898EA /* facade-interface.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -77,6 +80,9 @@
 		EB9AF8592054498A006936D7 /* observer-lib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "observer-lib.swift"; sourceTree = "<group>"; };
 		EB9AF85B205449AC006936D7 /* obs-interfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "obs-interfaces.swift"; sourceTree = "<group>"; };
 		EB9AF85D205449C8006936D7 /* obs-app.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "obs-app.swift"; sourceTree = "<group>"; };
+		EBD1BA3D205576640066F0C4 /* facade-demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "facade-demo.swift"; sourceTree = "<group>"; };
+		EBD1BA3F205576F80066F0C4 /* facade-lib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "facade-lib.swift"; sourceTree = "<group>"; };
+		EBECDDE0205D1A03006898EA /* facade-interface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "facade-interface.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +168,7 @@
 		EB87AF1420541BE2001CC60D /* patterns */ = {
 			isa = PBXGroup;
 			children = (
+				EBD1BA3C2055764E0066F0C4 /* Facade */,
 				EB7AC76820555F8300F9A02D /* Factory */,
 				EB7AC7632055580D00F9A02D /* Iterator */,
 				EB9AF85820544968006936D7 /* Observer */,
@@ -206,6 +213,16 @@
 				EB9AF85D205449C8006936D7 /* obs-app.swift */,
 			);
 			path = Observer;
+			sourceTree = "<group>";
+		};
+		EBD1BA3C2055764E0066F0C4 /* Facade */ = {
+			isa = PBXGroup;
+			children = (
+				EBD1BA3D205576640066F0C4 /* facade-demo.swift */,
+				EBD1BA3F205576F80066F0C4 /* facade-lib.swift */,
+				EBECDDE0205D1A03006898EA /* facade-interface.swift */,
+			);
+			path = Facade;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -377,14 +394,17 @@
 				EB87AF1620541BE2001CC60D /* main.swift in Sources */,
 				EB9AF85C205449AC006936D7 /* obs-interfaces.swift in Sources */,
 				EB7AC76C2055609300F9A02D /* Car.swift in Sources */,
+				EBECDDE1205D1A03006898EA /* facade-interface.swift in Sources */,
 				EB9AF85E205449C8006936D7 /* obs-app.swift in Sources */,
 				EB7AC76A2055606900F9A02D /* manufacture.swift in Sources */,
 				EB9AF85A2054498A006936D7 /* observer-lib.swift in Sources */,
+				EBD1BA40205576F80066F0C4 /* facade-lib.swift in Sources */,
 				EB87AF302054207A001CC60D /* SingletonDemo.swift in Sources */,
 				EB87AF2A20541C28001CC60D /* NetworkSettings.swift in Sources */,
 				EB7AC76E2055613300F9A02D /* f-demo.swift in Sources */,
 				EB41F61920543D66007FD855 /* ProxyAp.swift in Sources */,
 				EB7AC76720555C6A00F9A02D /* it-demo.swift in Sources */,
+				EBD1BA3E205576640066F0C4 /* facade-demo.swift in Sources */,
 				EB7AC7652055582F00F9A02D /* it-lib.swift in Sources */,
 				EB41F61A20543E84007FD855 /* ProxyLib.swift in Sources */,
 			);
