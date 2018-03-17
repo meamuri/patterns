@@ -14,4 +14,5 @@ import Foundation
 //it_main()             // iterator
 //f_main()              // factory
 //facade_main()         // facade
-adapterMain()           // adapter
+//adapterMain()         // adapter
+decoratorMain()

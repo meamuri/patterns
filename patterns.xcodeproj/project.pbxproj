@@ -29,6 +29,8 @@
 		EBECDDE1205D1A03006898EA /* facade-interface.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBECDDE0205D1A03006898EA /* facade-interface.swift */; };
 		EBECDDE5205D1B9A006898EA /* adapter-lib.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBECDDE4205D1B9A006898EA /* adapter-lib.swift */; };
 		EBECDDE7205D1ED6006898EA /* adapter-demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBECDDE6205D1ED6006898EA /* adapter-demo.swift */; };
+		EBECDDE9205D1FF1006898EA /* decorator-lib.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBECDDE8205D1FF1006898EA /* decorator-lib.swift */; };
+		EBECDDEB205D2227006898EA /* decorator-demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBECDDEA205D2227006898EA /* decorator-demo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -87,6 +89,8 @@
 		EBECDDE0205D1A03006898EA /* facade-interface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "facade-interface.swift"; sourceTree = "<group>"; };
 		EBECDDE4205D1B9A006898EA /* adapter-lib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "adapter-lib.swift"; sourceTree = "<group>"; };
 		EBECDDE6205D1ED6006898EA /* adapter-demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "adapter-demo.swift"; sourceTree = "<group>"; };
+		EBECDDE8205D1FF1006898EA /* decorator-lib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "decorator-lib.swift"; sourceTree = "<group>"; };
+		EBECDDEA205D2227006898EA /* decorator-demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "decorator-demo.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +247,8 @@
 		EBECDDE3205D1B88006898EA /* Decorator */ = {
 			isa = PBXGroup;
 			children = (
+				EBECDDE8205D1FF1006898EA /* decorator-lib.swift */,
+				EBECDDEA205D2227006898EA /* decorator-demo.swift */,
 			);
 			path = Decorator;
 			sourceTree = "<group>";
@@ -429,8 +435,10 @@
 				EB41F61920543D66007FD855 /* ProxyAp.swift in Sources */,
 				EB7AC76720555C6A00F9A02D /* it-demo.swift in Sources */,
 				EBD1BA3E205576640066F0C4 /* facade-demo.swift in Sources */,
+				EBECDDEB205D2227006898EA /* decorator-demo.swift in Sources */,
 				EB7AC7652055582F00F9A02D /* it-lib.swift in Sources */,
 				EB41F61A20543E84007FD855 /* ProxyLib.swift in Sources */,
+				EBECDDE9205D1FF1006898EA /* decorator-lib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
