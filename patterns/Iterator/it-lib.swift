@@ -14,16 +14,28 @@ protocol Iterator {
     func hasNext() -> Bool
 }
 
-class ImageAlbum {
+class ImageAlbum: Agregator {
+    func createIterator() -> Iterator {
+        return ImageIterator(album: self)
+    }
+    
     private var images = [Image]()
     init () {
         images.append(Image(name: "cat"))
         images.append(Image(name: "dog"))
         images.append(Image(name: "corgi"))
     }
-    
+
     func getSize() -> Int { return images.count}
     func getElem(i: Int) -> Image { return images[i] }
+    
+//    func createIterator()->Iterator {
+//        
+//    }
+}
+
+protocol Agregator {
+    func createIterator() -> Iterator
 }
 
 class Image {
@@ -36,17 +48,17 @@ class Image {
 class ImageIterator: Iterator {
     private var currentIndex: Int = 0
     private let album: ImageAlbum
-    
+
     init(album: ImageAlbum) {
         self.album = album
     }
-    
+
     func getNext() -> Image? {
         let res = hasNext() ? self.album.getElem(i: currentIndex) : nil
         currentIndex += 1
         return res
     }
-    
+
     func hasNext() -> Bool {
         return currentIndex < album.getSize()
     }

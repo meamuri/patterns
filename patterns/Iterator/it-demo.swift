@@ -10,8 +10,9 @@ import Foundation
 
 func it_main() {
     let album = ImageAlbum()
-    let it = ImageIterator(album: album)
+    let it = album.createIterator()
     while (it.hasNext()) {
         print(it.getNext()!.name)
     }
+
 }
